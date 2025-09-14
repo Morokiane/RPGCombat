@@ -7,6 +7,8 @@ namespace Enemies {
             Roaming
         }
 
+        [SerializeField] private float roam = 2f;
+
         private State state;
         private EnemyPathFinding enemyPathFinding;
 
@@ -23,7 +25,7 @@ namespace Enemies {
             while (state == State.Roaming) {
                 Vector2 roamPosition = GetRoamingPosition();
                 enemyPathFinding.MoveTo(roamPosition);
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(roam);
             }
         }
 
