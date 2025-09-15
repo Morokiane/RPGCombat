@@ -23,7 +23,7 @@ namespace Enemies {
 
         public void TakeDamage(uint damage) {
             currentHealth -= damage;
-            knockback.GetKnockback(Player.Player.instance.transform, knockBackForce);
+            knockback.GetKnockback(Player.Player._instance.transform, knockBackForce);
             StartCoroutine(flash.FlashRoutine());
             
             if (currentHealth <= 0) {

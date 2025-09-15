@@ -3,8 +3,7 @@ using System.Collections;
 using UnityEngine.InputSystem;
 
 namespace Player {
-    public class Player : MonoBehaviour {
-        public static Player instance;
+    public class Player : Controllers.Singleton<Player> {
 
         private static readonly int moveX = Animator.StringToHash("moveX");
         private static readonly int moveY = Animator.StringToHash("moveY");
@@ -18,6 +17,7 @@ namespace Player {
         [SerializeField] private float dashSpeed = 4f;
         [SerializeField] float dashCooldown = 0.25f;
         [SerializeField] private TrailRenderer trailRenderer;
+        [SerializeField] private Transform weaponCollider;
 
         private bool facingLeft;
         private bool isDashing;
@@ -30,12 +30,8 @@ namespace Player {
         private SpriteRenderer sprite;
         private Camera mainCamera;
 
-        private void Awake() {
-            if (instance == null) {
-                instance = this;
-            } else {
-                Destroy(gameObject);
-            }
+        protected override void Awake() {
+            base.Awake();
             
             mainCamera = Camera.main;
             rb = GetComponent<Rigidbody2D>();
@@ -45,6 +41,8 @@ namespace Player {
         }
 
         private void Start() {
+            // base.Start();
+            
             playerControls.Movement.Dash.performed += _ => Dash();
             defaultMoveSpeed = moveSpeed;
         }
@@ -56,6 +54,10 @@ namespace Player {
         private void FixedUpdate() {
             Move();
             AdjustPlayerFacing();
+        }
+
+        public Transform GetWeaponCollider() {
+            return weaponCollider;
         }
 
         private void Move() {

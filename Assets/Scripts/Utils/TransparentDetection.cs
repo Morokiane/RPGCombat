@@ -31,6 +31,7 @@ namespace Utils {
                 if (sprite) {
                     StartCoroutine(FadeRoutine(sprite, fadeTime, sprite.color.a, 1f));
                 } else if (tilemap) {
+                    if (!isActiveAndEnabled) return; // This stops the game from crashing when unloading the scene we are leaving
                     StartCoroutine(FadeRoutine(tilemap, fadeTime, tilemap.color.a, 1f));
                 }
             }
