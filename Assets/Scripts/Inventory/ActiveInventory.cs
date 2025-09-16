@@ -49,6 +49,7 @@ namespace Inventory {
             GameObject weaponToSpawn = transform.GetChild(activeSlotIndexNum).GetComponentInChildren<InventorySlot>().GetWeaponInfo().weaponPrefab;
 
             GameObject newWeapon = Instantiate(weaponToSpawn, Player.ActiveWeapon._instance.transform.position, Quaternion.identity);
+            Player.ActiveWeapon._instance.transform.rotation = Quaternion.Euler(0, 0, 0);
             newWeapon.transform.parent = Player.ActiveWeapon._instance.transform;
 
             Player.ActiveWeapon._instance.NewWeapon(newWeapon.GetComponent<MonoBehaviour>());

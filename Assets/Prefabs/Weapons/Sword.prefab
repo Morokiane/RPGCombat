@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.Sword
   slash: {fileID: 5466943287252607340, guid: 88cf66093114017479e28b749d5bed99, type: 3}
-  hurtBox: {fileID: 0}
   swordAttackTime: 0.5
+  weaponInfo: {fileID: 11400000, guid: bd146dc0d550e2e46a86818b9735d773, type: 2}
 --- !u!212 &7400253546621536911
 SpriteRenderer:
   m_ObjectHideFlags: 0

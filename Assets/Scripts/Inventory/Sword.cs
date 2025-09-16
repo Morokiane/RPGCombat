@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 using UnityEngine.InputSystem;
 
 namespace Inventory {
@@ -7,7 +6,8 @@ namespace Inventory {
         private static readonly int attack = Animator.StringToHash("Attack");
 
         [SerializeField] private GameObject slash;
-        [SerializeField] private float swordAttackTime = 0.5f;
+        // [SerializeField] private float swordAttackTime = 0.5f;
+        [SerializeField] private WeaponInfo weaponInfo;
 
         private Animator anim;
         // private Player.Player player;
@@ -32,17 +32,14 @@ namespace Inventory {
             MouseFollowWithOffset();
         }
 
+        public WeaponInfo GetWeaponInfo() {
+            return weaponInfo;
+        }
+
         public void Attack() {
-            // isAttacking = true;
             anim.SetTrigger(attack);
             slashObject = Instantiate(slash, transform.position, Quaternion.identity);
             weaponCollider.gameObject.SetActive(true);
-            StartCoroutine(AttackCooldown());
-        }
-
-        private IEnumerator AttackCooldown() {
-            yield return new WaitForSeconds(swordAttackTime);
-            Player.ActiveWeapon._instance.ToggleIsAttacking(false);
         }
 
         /// <summary>
@@ -88,6 +85,5 @@ namespace Inventory {
                 }
             }
         }
-
     }
 }

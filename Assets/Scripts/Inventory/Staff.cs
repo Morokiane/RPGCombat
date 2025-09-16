@@ -1,7 +1,41 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-namespace NAMESPACE {
-    public class Staff : MonoBehaviour {
+namespace Inventory {
+    public class Staff : MonoBehaviour, IWeapon {
+    
+        [SerializeField] private WeaponInfo weaponInfo;
+        private Camera mainCamera;
+
+        private void Start() {
+            mainCamera = Camera.main;
+        }
+    
+        private void Update() {
+            MouseFollowWithOffset();
+        }
         
+        public WeaponInfo GetWeaponInfo() {
+            return weaponInfo;
+        }
+
+        public void Attack() {
+            Debug.Log("zzt, zzt");
+        }
+
+        private void MouseFollowWithOffset() {
+            Vector3 mousePos = Mouse.current.position.ReadValue();
+
+            if (mainCamera != null) {
+                Vector3 playerScreenPoint = mainCamera.WorldToScreenPoint(Player.Player._instance.transform.position);
+                float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+            
+                if (mousePos.x < playerScreenPoint.x) {
+                    Player.ActiveWeapon._instance.transform.rotation = Quaternion.Euler(0, -180, angle);
+                } else {
+                    Player.ActiveWeapon._instance.transform.rotation = Quaternion.Euler(0, 0, angle);
+                }
+            }
+        }
     }
 }
