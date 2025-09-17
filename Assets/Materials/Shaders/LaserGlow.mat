@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TorchGlow
+  m_Name: LaserGlow
   m_Shader: {fileID: -6465566751694194690, guid: 7f79797b861ca6e41af125bd0d7e5d94, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -42,7 +42,7 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 1.4980391, g: 0.93622583, b: 0.19179744, a: 1}
+    - _Color: {r: 3.9533496, g: 2.4707153, b: 0.50615656, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &6877152680908321245

@@ -21178,7 +21178,7 @@ Transform:
   m_GameObject: {fileID: 558985247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.229, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21590,7 +21590,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 834683792770681449f09e2e617a4532, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21609,9 +21609,9 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 2079373269
+  m_SortingLayer: -1
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -22811,6 +22811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 747444565}
+  - component: {fileID: 747444571}
   - component: {fileID: 747444570}
   - component: {fileID: 747444569}
   - component: {fileID: 747444568}
@@ -26795,6 +26796,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &747444571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747444564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46edfd17247742828dc5301574dddd53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Utils.Indestructible
 --- !u!1 &817717796
 GameObject:
   m_ObjectHideFlags: 0
@@ -26934,6 +26947,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 551939916105491505, guid: 986b9bc63b8592042b2c07069746af09, type: 3}
   m_PrefabInstance: {fileID: 1094941023}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &910421553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1578506117398911879, guid: a3b9181680404244988a698f21bc1b4d, type: 3}
+  m_PrefabInstance: {fileID: 2696320294760620103}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &910421558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910421553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46edfd17247742828dc5301574dddd53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Utils.Indestructible
 --- !u!1 &924025446
 GameObject:
   m_ObjectHideFlags: 0
@@ -37186,7 +37216,7 @@ Transform:
   m_GameObject: {fileID: 1710969640}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.38, y: 3.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -38300,18 +38330,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3357825252280175089, guid: a3b9181680404244988a698f21bc1b4d, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3357825252280175089, guid: a3b9181680404244988a698f21bc1b4d, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1512045605
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5339177785144587326, guid: a3b9181680404244988a698f21bc1b4d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1578506117398911879, guid: a3b9181680404244988a698f21bc1b4d, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 910421558}
   m_SourcePrefab: {fileID: 100100000, guid: a3b9181680404244988a698f21bc1b4d, type: 3}
 --- !u!1001 &3503879163552892574
 PrefabInstance:

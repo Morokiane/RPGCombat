@@ -5,6 +5,8 @@ namespace Inventory {
 
     public class WeaponInfo : ScriptableObject {
         public GameObject weaponPrefab;
-        public float weaponCooldown;        
+        public float weaponCooldown;
+        public uint weaponDamage;
+        public float weaponRange;
     }
 }

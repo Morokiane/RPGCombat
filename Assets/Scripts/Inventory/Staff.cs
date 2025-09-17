@@ -3,9 +3,18 @@ using UnityEngine.InputSystem;
 
 namespace Inventory {
     public class Staff : MonoBehaviour, IWeapon {
-    
+        readonly int attack = Animator.StringToHash("Attack");
+        
         [SerializeField] private WeaponInfo weaponInfo;
+        [SerializeField] private GameObject laser;
+        [SerializeField] private Transform spawnPoint;
+
+        private Animator anim;
         private Camera mainCamera;
+
+        private void Awake() {
+            anim = GetComponent<Animator>();
+        }
 
         private void Start() {
             mainCamera = Camera.main;
@@ -20,7 +29,11 @@ namespace Inventory {
         }
 
         public void Attack() {
-            Debug.Log("zzt, zzt");
+            anim.SetTrigger(attack);
+        }
+
+        public void SpawnLaser() {
+            GameObject newLaser = Instantiate(laser, spawnPoint.position, Quaternion.identity);
         }
 
         private void MouseFollowWithOffset() {
