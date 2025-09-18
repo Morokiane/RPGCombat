@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 namespace Player {
     public class Laser : MonoBehaviour {
         [SerializeField] private float laserGrowTime = 2f;
+
+        private bool isGrowing = true;
         private float laserRange;
 
         private SpriteRenderer sprite;
@@ -27,10 +29,16 @@ namespace Player {
             transform.right = -direction;
         }
 
+        void OnTriggerEnter2D(Collider2D other) {
+            if (other.gameObject.GetComponent<Utils.Indestructible>() && !other.isTrigger) {
+                isGrowing = false;
+            }
+        }
+
         private IEnumerator IncreaseLaserLength() {
             float timePassed = 0f;
 
-            while (sprite.size.x < laserRange) {
+            while (sprite.size.x < laserRange && isGrowing) {
                 timePassed += Time.deltaTime;
                 float linearT = timePassed / laserGrowTime;
 
@@ -41,12 +49,11 @@ namespace Player {
 
                 yield return null;
             }
-            
+
             StartCoroutine(GetComponent<Utils.SpriteFade>().SlowFade());
         }
 
         public void UpdateLaserRange(float laserRange) {
-            Debug.Log("jfkdal;");
             this.laserRange = laserRange;
             StartCoroutine(IncreaseLaserLength());
         }

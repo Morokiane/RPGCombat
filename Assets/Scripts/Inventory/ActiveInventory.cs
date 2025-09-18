@@ -41,12 +41,17 @@ namespace Inventory {
                 Destroy(Player.ActiveWeapon._instance.currentActiveWeapon.gameObject);
             }
             
-            if (!transform.GetChild(activeSlotIndexNum).GetComponentInChildren<InventorySlot>()) {
+            Transform childTransform = transform.GetChild(activeSlotIndexNum);
+            InventorySlot inventorySlot = childTransform.GetComponentInChildren<InventorySlot>();
+            WeaponInfo weaponInfo = inventorySlot.GetWeaponInfo();
+            GameObject weaponToSpawn = weaponInfo.weaponPrefab;
+
+            if (weaponInfo == null) {
                 Player.ActiveWeapon._instance.WeaponNull();
                 return;
             }
-            
-            GameObject weaponToSpawn = transform.GetChild(activeSlotIndexNum).GetComponentInChildren<InventorySlot>().GetWeaponInfo().weaponPrefab;
+
+            // GameObject weaponToSpawn = transform.GetChild(activeSlotIndexNum).GetComponentInChildren<InventorySlot>().GetWeaponInfo().weaponPrefab;
 
             GameObject newWeapon = Instantiate(weaponToSpawn, Player.ActiveWeapon._instance.transform.position, Quaternion.identity);
             Player.ActiveWeapon._instance.transform.rotation = Quaternion.Euler(0, 0, 0);
