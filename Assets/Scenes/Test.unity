@@ -16233,7 +16233,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1823320245191776068, guid: 22154da804adf5443886a9516ea049af, type: 3}
       propertyPath: maxHealth
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6785585189741673536, guid: 22154da804adf5443886a9516ea049af, type: 3}
       propertyPath: m_Name
@@ -37101,7 +37101,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1823320245191776068, guid: 22154da804adf5443886a9516ea049af, type: 3}
       propertyPath: maxHealth
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6785585189741673536, guid: 22154da804adf5443886a9516ea049af, type: 3}
       propertyPath: m_Name
@@ -37407,7 +37407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b035d3d87644af4bb07d09f01bb80b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.DamageSource
-  damageAmount: 1
 --- !u!1 &1910213752
 GameObject:
   m_ObjectHideFlags: 0
@@ -38349,7 +38348,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1823320245191776068, guid: 22154da804adf5443886a9516ea049af, type: 3}
       propertyPath: maxHealth
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6785585189741673536, guid: 22154da804adf5443886a9516ea049af, type: 3}
       propertyPath: m_Name

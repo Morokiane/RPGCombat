@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6490529482864839775}
   - component: {fileID: 5860867395595008543}
+  - component: {fileID: -3330321696923860117}
   - component: {fileID: 6572314705341487978}
   - component: {fileID: 6737719255770594650}
   - component: {fileID: 7181574652932848844}
@@ -48,6 +49,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54527d41e4014554381fc1058f6fedff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NAMESPACE.Laser
+  laserGrowTime: 0.22
+--- !u!114 &-3330321696923860117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371159082562648815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3890ad7c4cd91411cb0e753eff5095f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Utils.SpriteFade
+  fadeTime: 0.4
 --- !u!114 &6572314705341487978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,7 +75,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b035d3d87644af4bb07d09f01bb80b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.DamageSource
-  damageAmount: 0
 --- !u!212 &6737719255770594650
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -118,7 +132,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!70 &7181574652932848844
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -153,8 +167,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.000000003811385, y: 0.03197222}
-  m_Size: {x: 0.877757, y: 0.43579927}
+  m_Offset: {x: 0.50525147, y: 0.0008974964}
+  m_Size: {x: 0.8754611, y: 0.43810838}
   m_Direction: 1
 --- !u!50 &3470174335955290974
 Rigidbody2D:

@@ -30,16 +30,20 @@ namespace Inventory {
 
         public void Attack() {
             anim.SetTrigger(attack);
+            SpawnLaser();
         }
 
         public void SpawnLaser() {
             GameObject newLaser = Instantiate(laser, spawnPoint.position, Quaternion.identity);
+            newLaser.GetComponent<Player.Laser>().UpdateLaserRange(weaponInfo.weaponRange);
         }
 
         private void MouseFollowWithOffset() {
             Vector3 mousePos = Mouse.current.position.ReadValue();
 
             if (mainCamera != null) {
+                // TODO This needs to change...I forget where the tweak is in the video. This is not rotating around
+                // the correct pivot.
                 Vector3 playerScreenPoint = mainCamera.WorldToScreenPoint(Player.Player._instance.transform.position);
                 float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
             

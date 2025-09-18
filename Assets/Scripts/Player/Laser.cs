@@ -1,7 +1,54 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Player {
     public class Laser : MonoBehaviour {
-        
+        [SerializeField] private float laserGrowTime = 2f;
+        private float laserRange;
+
+        private SpriteRenderer sprite;
+        private CapsuleCollider2D capsuleCollider;
+
+        private void Awake() {
+            sprite = GetComponent<SpriteRenderer>();
+            capsuleCollider = GetComponent<CapsuleCollider2D>();
+        }
+
+        private void Start() {
+            LaserFaceMouse();
+        }
+
+        private void LaserFaceMouse() {
+            Vector3 mousePos = Mouse.current.position.ReadValue();
+            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
+            Vector2 direction = transform.position - mousePos;
+            transform.right = -direction;
+        }
+
+        private IEnumerator IncreaseLaserLength() {
+            float timePassed = 0f;
+
+            while (sprite.size.x < laserRange) {
+                timePassed += Time.deltaTime;
+                float linearT = timePassed / laserGrowTime;
+
+                sprite.size = new Vector2(Mathf.Lerp(1f, laserRange, linearT), 1f);
+                // Resizes the collider
+                capsuleCollider.size = new Vector2(Mathf.Lerp(1f, laserRange, linearT), capsuleCollider.size.y);
+                capsuleCollider.offset = new Vector2((Mathf.Lerp(1f, laserRange, linearT)) / 2, 0);
+
+                yield return null;
+            }
+            
+            StartCoroutine(GetComponent<Utils.SpriteFade>().SlowFade());
+        }
+
+        public void UpdateLaserRange(float laserRange) {
+            Debug.Log("jfkdal;");
+            this.laserRange = laserRange;
+            StartCoroutine(IncreaseLaserLength());
+        }
     }
 }

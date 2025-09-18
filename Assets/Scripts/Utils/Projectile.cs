@@ -33,7 +33,6 @@ namespace Utils {
             Indestructible indestructible = other.gameObject.GetComponent<Indestructible>();
 
             if (!other.isTrigger && (enemyHealth || indestructible)) {
-                enemyHealth?.TakeDamage(weaponInfo.weaponDamage);
                 Instantiate(particleOnHitPrefab, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }
