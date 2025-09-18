@@ -23,7 +23,8 @@ namespace Player {
 
         private void LaserFaceMouse() {
             Vector3 mousePos = Mouse.current.position.ReadValue();
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+            if (Camera.main != null)
+                mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
             Vector2 direction = transform.position - mousePos;
             transform.right = -direction;
