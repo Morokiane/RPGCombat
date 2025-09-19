@@ -29,6 +29,7 @@ namespace Player {
         private PlayerControls playerControls;
         private SpriteRenderer sprite;
         private Camera mainCamera;
+        private Utils.Knockback knockback;
 
         protected override void Awake() {
             base.Awake();
@@ -38,6 +39,7 @@ namespace Player {
             anim = GetComponent<Animator>();
             sprite = GetComponent<SpriteRenderer>();
             playerControls = new PlayerControls();
+            knockback = GetComponent<Utils.Knockback>();
         }
 
         private void Start() {
@@ -61,6 +63,7 @@ namespace Player {
         }
 
         private void Move() {
+            if (knockback.gettingKnockedUp) return;            
             rb.MovePosition(rb.position + movement * (moveSpeed * Time.deltaTime));
         }
 

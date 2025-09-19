@@ -36836,6 +36836,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1632003009}
   - component: {fileID: 1632003012}
+  - component: {fileID: 1632003015}
+  - component: {fileID: 1632003014}
+  - component: {fileID: 1632003013}
   - component: {fileID: 1632003008}
   - component: {fileID: 1632003007}
   - component: {fileID: 1632003010}
@@ -37002,7 +37005,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -37026,6 +37029,48 @@ MonoBehaviour:
   dashCooldown: 0.25
   trailRenderer: {fileID: 2091782255}
   weaponCollider: {fileID: 1808965918}
+--- !u!114 &1632003013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632003005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d888469e0d1744349a1b590f293e0600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Utils.Flash
+  whiteFlashMat: {fileID: 2100000, guid: 2d8dcdf3f1006fe4b9a589f8c18de3f4, type: 2}
+  restoreDefaultMatTime: 0.2
+--- !u!114 &1632003014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632003005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5170f50da848898b93b69d7c581cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Utils.Knockback
+  knockBackTime: 0.2
+--- !u!114 &1632003015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632003005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fb0fd2f312342a8acfeffc7632a90d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerHealth
+  maxHealth: 3
+  knockbackAmount: 10
+  recoverTime: 0.5
 --- !u!1001 &1654196692
 PrefabInstance:
   m_ObjectHideFlags: 0
