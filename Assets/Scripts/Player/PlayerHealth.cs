@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Utils;
+using Enemies;
 
 namespace Player {
     public class PlayerHealth : MonoBehaviour {
@@ -23,15 +24,22 @@ namespace Player {
             currentHealth = maxHealth;
         }
 
-        private void OnTriggerStay2D(Collider2D other) {
-            if (other.CompareTag("Enemy") && canTakeDamage) {
-                TakeDamage(1);
-                knockback.GetKnockback(other.gameObject.transform, knockbackAmount);
-                StartCoroutine(flash.FlashRoutine());
+        private void OnCollisionStay2D(Collision2D other) {
+            EnemyAI enemy = other.gameObject.GetComponent<EnemyAI>();
+            
+            if (enemy) {
+                TakeDamage(1, other.transform);
             }
+            // if (other.CompareTag("Enemy")) {
+            //     TakeDamage(1, other.transform);
+            // }
         }
 
-        private void TakeDamage(uint damageAmount) {
+        public void TakeDamage(uint damageAmount, Transform hitTransform) {
+            if (!canTakeDamage) return;
+
+            knockback.GetKnockback(hitTransform.gameObject.transform, knockbackAmount);
+            StartCoroutine(flash.FlashRoutine());
             currentHealth -= damageAmount;
             canTakeDamage = false;
             StartCoroutine(ResetDamage());

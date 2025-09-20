@@ -17,7 +17,7 @@ namespace Inventory {
         public void Attack() {
             anim.SetTrigger(fire);
             GameObject newArrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, Player.ActiveWeapon._instance.transform.rotation);
-            newArrow.GetComponent<Utils.Projectile>().UpdateWeaponInfo(weaponInfo);
+            newArrow.GetComponent<Utils.Projectile>().UpdateProjectileRange(weaponInfo.weaponRange);
         }
         
         public WeaponInfo GetWeaponInfo() {

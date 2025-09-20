@@ -70,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,20 +136,20 @@ TextureImporter:
       name: Grape_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 66
-        width: 19
-        height: 24
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8c1e9a2912cb227a0800000000000000
-      internalID: -6403348867786874424
+      spriteID: 00f40c7926cdf4c3993115c20555c1c3
+      internalID: -1135612969
       vertices: []
       indices: 
       edges: []
@@ -158,20 +158,20 @@ TextureImporter:
       name: Grape_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 66
-        width: 20
-        height: 25
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4a95071a9a920ddd0800000000000000
-      internalID: -2463423187636954716
+      spriteID: 698fa1a5797864c1eaa3b4f21a805c4c
+      internalID: -1567408194
       vertices: []
       indices: 
       edges: []
@@ -180,20 +180,20 @@ TextureImporter:
       name: Grape_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 66
-        width: 19
-        height: 24
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2e731777219390b0800000000000000
-      internalID: -5723071102770250198
+      spriteID: ab81653b096df480984fb98321c1b6e4
+      internalID: 2122990789
       vertices: []
       indices: 
       edges: []
@@ -202,20 +202,20 @@ TextureImporter:
       name: Grape_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 66
-        width: 19
-        height: 25
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c13b26618992117c0800000000000000
-      internalID: -4102452052370476260
+      spriteID: ae11434a84a1e4b1e8dfb2692cb86b53
+      internalID: 1537693438
       vertices: []
       indices: 
       edges: []
@@ -224,20 +224,20 @@ TextureImporter:
       name: Grape_4
       rect:
         serializedVersion: 2
-        x: 7
-        y: 34
-        width: 19
-        height: 24
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bebe1f93216a8b1d0800000000000000
-      internalID: -3334732926856074261
+      spriteID: 5d8b663e7d7ba4b1e928a2633a5f4f52
+      internalID: 1437270963
       vertices: []
       indices: 
       edges: []
@@ -246,20 +246,20 @@ TextureImporter:
       name: Grape_5
       rect:
         serializedVersion: 2
-        x: 39
-        y: 34
-        width: 19
-        height: 25
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1e5f88708389361a0800000000000000
-      internalID: -6817438044496792095
+      spriteID: d07762055a3ad410e8649ea55a75b71e
+      internalID: -14287153
       vertices: []
       indices: 
       edges: []
@@ -268,20 +268,20 @@ TextureImporter:
       name: Grape_6
       rect:
         serializedVersion: 2
-        x: 71
-        y: 34
-        width: 19
-        height: 26
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6b4e8fc2b16c629b0800000000000000
-      internalID: -5105175307556952906
+      spriteID: 22c93b2c3a3ad42119adf1a76a54dd4a
+      internalID: 769124578
       vertices: []
       indices: 
       edges: []
@@ -290,20 +290,20 @@ TextureImporter:
       name: Grape_7
       rect:
         serializedVersion: 2
-        x: 103
-        y: 34
-        width: 19
-        height: 26
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2e096eb06f9e7d10800000000000000
-      internalID: 2125311312025685546
+      spriteID: cc73206bb37a14b8189b9a07ee59a85d
+      internalID: 1662300700
       vertices: []
       indices: 
       edges: []
@@ -312,20 +312,20 @@ TextureImporter:
       name: Grape_8
       rect:
         serializedVersion: 2
-        x: 135
-        y: 34
-        width: 20
-        height: 25
+        x: 128
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e8b9554e45d4da160800000000000000
-      internalID: 7038366819653360526
+      spriteID: 91d814f093d184e7ba34c07c675fe23d
+      internalID: -800193587
       vertices: []
       indices: 
       edges: []
@@ -334,20 +334,20 @@ TextureImporter:
       name: Grape_9
       rect:
         serializedVersion: 2
-        x: 167
-        y: 34
-        width: 20
-        height: 25
+        x: 160
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e5a84488054ae8e50800000000000000
-      internalID: 6813563952048671326
+      spriteID: 15735a5d4f6d34a578f7c1e5ea12ce48
+      internalID: 1929333636
       vertices: []
       indices: 
       edges: []
@@ -356,20 +356,20 @@ TextureImporter:
       name: Grape_10
       rect:
         serializedVersion: 2
-        x: 10
-        y: 10
-        width: 12
-        height: 12
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 451d0640599def8c0800000000000000
-      internalID: -3963491387992649388
+      spriteID: d0f305b96fe0240da807ebc114553647
+      internalID: 750429508
       vertices: []
       indices: 
       edges: []
@@ -378,20 +378,20 @@ TextureImporter:
       name: Grape_11
       rect:
         serializedVersion: 2
-        x: 36
-        y: 6
-        width: 25
-        height: 14
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 344857ac997036910800000000000000
-      internalID: 1829314230750643267
+      spriteID: 67c97c5c7623e497ea39815c20f329b2
+      internalID: -1259307667
       vertices: []
       indices: 
       edges: []
@@ -400,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5f48aa18b1f5a44aa990a1c6299a780f
     internalID: 0
     vertices: []
     indices: 
@@ -408,20 +408,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Grape_0: -6403348867786874424
-      Grape_1: -2463423187636954716
-      Grape_10: -3963491387992649388
-      Grape_11: 1829314230750643267
-      Grape_2: -5723071102770250198
-      Grape_3: -4102452052370476260
-      Grape_4: -3334732926856074261
-      Grape_5: -6817438044496792095
-      Grape_6: -5105175307556952906
-      Grape_7: 2125311312025685546
-      Grape_8: 7038366819653360526
-      Grape_9: 6813563952048671326
+      Grape_0: -1135612969
+      Grape_1: -1567408194
+      Grape_10: 750429508
+      Grape_11: -1259307667
+      Grape_2: 2122990789
+      Grape_3: 1537693438
+      Grape_4: 1437270963
+      Grape_5: -14287153
+      Grape_6: 769124578
+      Grape_7: 1662300700
+      Grape_8: -800193587
+      Grape_9: 1929333636
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
