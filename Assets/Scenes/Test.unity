@@ -407,18 +407,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 49618781388085689, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
+      propertyPath: cooldown
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 49618781388085689, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
+      propertyPath: burstCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 49618781388085689, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
+      propertyPath: bulletMoveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 49618781388085689, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
+      propertyPath: timeBetweenBursts
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4537993910233288571, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
       propertyPath: m_Name
       value: Ghost (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4537993910233288571, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6075162958447370720, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
       propertyPath: enemyType
       value: 
-      objectReference: {fileID: 1051804429}
+      objectReference: {fileID: 0}
     - target: {fileID: 6075162958447370720, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
       propertyPath: stopMovingWhenAttacking
       value: 1
@@ -470,10 +486,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4537993910233288571, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 1051804429}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
 --- !u!1 &314055803
 GameObject:
@@ -21528,24 +21541,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &660805128 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4537993910233288571, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
+--- !u!114 &660805139 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 49618781388085689, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
   m_PrefabInstance: {fileID: 1400463032575053062}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &660805138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660805128}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18c4be1180cb0418b9cd73e8e59ef6dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemies.Shooter
-  bullet: {fileID: 7932762187162081410, guid: 688267c2bbd26449a96ae2eedcd40de2, type: 3}
 --- !u!1 &667325824
 GameObject:
   m_ObjectHideFlags: 0
@@ -27323,24 +27329,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventory.InventorySlot
   weaponInfo: {fileID: 11400000, guid: bd146dc0d550e2e46a86818b9735d773, type: 2}
---- !u!1 &1051804424 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4537993910233288571, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
-  m_PrefabInstance: {fileID: 275982618}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1051804429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1051804424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18c4be1180cb0418b9cd73e8e59ef6dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Enemies.Shooter
-  bullet: {fileID: 7932762187162081410, guid: 688267c2bbd26449a96ae2eedcd40de2, type: 3}
 --- !u!1 &1074110040
 GameObject:
   m_ObjectHideFlags: 0
@@ -38450,6 +38438,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 49618781388085689, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
+      propertyPath: cooldown
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 49618781388085689, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
+      propertyPath: burstCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 49618781388085689, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
+      propertyPath: bulletMoveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 49618781388085689, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
+      propertyPath: timeBetweenBursts
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4537993910233288571, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
       propertyPath: m_Name
       value: Ghost
@@ -38461,14 +38465,14 @@ PrefabInstance:
     - target: {fileID: 6075162958447370720, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
       propertyPath: enemyType
       value: 
-      objectReference: {fileID: 660805138}
+      objectReference: {fileID: 660805139}
     - target: {fileID: 7808525547584180205, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.36
+      value: -3.42
       objectReference: {fileID: 0}
     - target: {fileID: 7808525547584180205, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.46
+      value: 6.25
       objectReference: {fileID: 0}
     - target: {fileID: 7808525547584180205, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -38509,10 +38513,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4537993910233288571, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 660805138}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfe34493f78ea4e34b9685abde9503d6, type: 3}
 --- !u!1001 &2696320294760620103
 PrefabInstance:
