@@ -24,6 +24,7 @@ namespace Enemies {
             }
         }
 
+        // Called from animation
         public void SpawnProjectile() {
             Instantiate(grapeProjectile, transform.position, Quaternion.identity);
         }

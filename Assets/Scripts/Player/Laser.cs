@@ -30,8 +30,8 @@ namespace Player {
             transform.right = -direction;
         }
 
-        void OnTriggerEnter2D(Collider2D other) {
-            if (other.gameObject.GetComponent<Utils.Indestructible>() && !other.isTrigger) {
+        void OnTriggerEnter2D(Collider2D _other) {
+            if (_other.gameObject.GetComponent<Utils.Indestructible>() && !_other.isTrigger) {
                 isGrowing = false;
             }
         }
@@ -54,8 +54,8 @@ namespace Player {
             StartCoroutine(GetComponent<Utils.SpriteFade>().SlowFade());
         }
 
-        public void UpdateLaserRange(float laserRange) {
-            this.laserRange = laserRange;
+        public void UpdateLaserRange(float _laserRange) {
+            this.laserRange = _laserRange;
             StartCoroutine(IncreaseLaserLength());
         }
     }

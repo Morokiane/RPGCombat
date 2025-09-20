@@ -1,43 +1,31 @@
 fileFormatVersion: 2
-guid: 25c70d0e1d7c54871b10603a20543ff6
+guid: d13ef62e8afe7374f9d008db6f31bd60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6403348867786874424
-    second: Grape_0
+      213: -234688072440724827
+    second: Gold Coin Sprite Sheet_0
   - first:
-      213: -2463423187636954716
-    second: Grape_1
+      213: -2773521449510625339
+    second: Gold Coin Sprite Sheet_1
   - first:
-      213: -5723071102770250198
-    second: Grape_2
+      213: 3507830584120488930
+    second: Gold Coin Sprite Sheet_2
   - first:
-      213: -4102452052370476260
-    second: Grape_3
+      213: -3027942650856943503
+    second: Gold Coin Sprite Sheet_3
   - first:
-      213: -3334732926856074261
-    second: Grape_4
+      213: -8681122823199863251
+    second: Gold Coin Sprite Sheet_4
   - first:
-      213: -6817438044496792095
-    second: Grape_5
+      213: 8605766828651519105
+    second: Gold Coin Sprite Sheet_5
   - first:
-      213: -5105175307556952906
-    second: Grape_6
+      213: 4929703270696266693
+    second: Gold Coin Sprite Sheet_6
   - first:
-      213: 2125311312025685546
-    second: Grape_7
-  - first:
-      213: 7038366819653360526
-    second: Grape_8
-  - first:
-      213: 6813563952048671326
-    second: Grape_9
-  - first:
-      213: -3963491387992649388
-    second: Grape_10
-  - first:
-      213: 1829314230750643267
-    second: Grape_11
+      213: -1796587115917803789
+    second: Gold Coin Sprite Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -133,233 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grape_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00f40c7926cdf4c3993115c20555c1c3
-      internalID: -1135612969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grape_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 698fa1a5797864c1eaa3b4f21a805c4c
-      internalID: -1567408194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grape_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab81653b096df480984fb98321c1b6e4
-      internalID: 2122990789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grape_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae11434a84a1e4b1e8dfb2692cb86b53
-      internalID: 1537693438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grape_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d8b663e7d7ba4b1e928a2633a5f4f52
-      internalID: 1437270963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grape_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d07762055a3ad410e8649ea55a75b71e
-      internalID: -14287153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grape_6
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22c93b2c3a3ad42119adf1a76a54dd4a
-      internalID: 769124578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grape_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc73206bb37a14b8189b9a07ee59a85d
-      internalID: 1662300700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grape_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91d814f093d184e7ba34c07c675fe23d
-      internalID: -800193587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grape_9
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 32
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15735a5d4f6d34a578f7c1e5ea12ce48
-      internalID: 1929333636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grape_10
+      name: Gold Coin Sprite Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0f305b96fe0240da807ebc114553647
-      internalID: 750429508
+      spriteID: c80957c996d8f89468ac1e89cfe9ab73
+      internalID: 943290615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Grape_11
+      name: Gold Coin Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,8 +158,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67c97c5c7623e497ea39815c20f329b2
-      internalID: -1259307667
+      spriteID: ccaf06546de2ff741b01deda8f342de7
+      internalID: -1456037777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864bd8b79b30e854c942d31d97637397
+      internalID: 1771640916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379fd8b075a494647bb45af2c80ce5ed
+      internalID: 1000891719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1367defd18f074e9417999dba90785
+      internalID: -156162375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07841cd853749c4384b4d38cc743eab
+      internalID: 1748684394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7221fdd77d312b4a85d68a21c2ba15d
+      internalID: -749624662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399080cb153c5f84ab9961e16a78b730
+      internalID: 1823238754
       vertices: []
       indices: 
       edges: []
@@ -400,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5f48aa18b1f5a44aa990a1c6299a780f
+    spriteID: ce96ca19b63d095449ad6d7b3876bcac
     internalID: 0
     vertices: []
     indices: 
@@ -410,20 +310,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Grape_0: -1135612969
-      Grape_1: -1567408194
-      Grape_10: 750429508
-      Grape_11: -1259307667
-      Grape_2: 2122990789
-      Grape_3: 1537693438
-      Grape_4: 1437270963
-      Grape_5: -14287153
-      Grape_6: 769124578
-      Grape_7: 1662300700
-      Grape_8: -800193587
-      Grape_9: 1929333636
+      Gold Coin Sprite Sheet_0: 943290615
+      Gold Coin Sprite Sheet_1: -1456037777
+      Gold Coin Sprite Sheet_2: 1771640916
+      Gold Coin Sprite Sheet_3: 1000891719
+      Gold Coin Sprite Sheet_4: -156162375
+      Gold Coin Sprite Sheet_5: 1748684394
+      Gold Coin Sprite Sheet_6: -749624662
+      Gold Coin Sprite Sheet_7: 1823238754
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
