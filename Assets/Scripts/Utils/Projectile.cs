@@ -26,22 +26,26 @@ namespace Utils {
             }
         }
 
-        public void UpdateProjectileRange(float projectileRange) {
-            this.projectileRange = projectileRange;
+        public void UpdateProjectileRange(float _projectileRange) {
+            projectileRange = _projectileRange;
         }
 
-        private void OnTriggerEnter2D(Collider2D other) {
-            Enemies.EnemyHealth enemyHealth = other.gameObject.GetComponent<Enemies.EnemyHealth>();
-            Indestructible indestructible = other.gameObject.GetComponent<Indestructible>();
-            PlayerHealth player = other.gameObject.GetComponent<PlayerHealth>();
+        public void UpdateMoveSpeed(float _moveSpeed) {
+            moveSpeed = _moveSpeed;
+        }
+
+        private void OnTriggerEnter2D(Collider2D _other) {
+            Enemies.EnemyHealth enemyHealth = _other.gameObject.GetComponent<Enemies.EnemyHealth>();
+            Indestructible indestructible = _other.gameObject.GetComponent<Indestructible>();
+            PlayerHealth player = _other.gameObject.GetComponent<PlayerHealth>();
             
             // TODO This needs to be refactored
-            if (!other.isTrigger && (enemyHealth || indestructible || player)) {
+            if (!_other.isTrigger && (enemyHealth || indestructible || player)) {
                 if ((player && isEnemyProjectile) || (enemyHealth && !isEnemyProjectile)) {
                     player?.TakeDamage(1, transform);
                     Instantiate(particleOnHitPrefab, transform.position, Quaternion.identity);
                     Destroy(gameObject);
-                } else if (!other.isTrigger && indestructible) {
+                } else if (!_other.isTrigger && indestructible) {
                     Instantiate(particleOnHitPrefab, transform.position, Quaternion.identity);
                     Destroy(gameObject);
                 }
