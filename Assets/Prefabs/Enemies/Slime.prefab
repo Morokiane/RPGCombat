@@ -142,6 +142,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86f9ef4e4f7424d4abd35bc351fecf6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemies.EnemyAI
+  roam: 2
+  attackRange: 0
+  enemyType: {fileID: 0}
+  attackCooldown: 2
+  stopMovingWhenAttacking: 0
 --- !u!114 &7151204956256116244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65cffa9a423840b09b9b9cb408552657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemies.EnemyHealth
-  maxHealth: 1
+  maxHealth: 5
+  knockBackForce: 15
   deathVFX: {fileID: 6652811163958754510, guid: 91cbaa61177fa69489a59e8859332a23, type: 3}
 --- !u!114 &-7124818031101632400
 MonoBehaviour:
